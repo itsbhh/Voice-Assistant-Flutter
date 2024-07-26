@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:voice_assistant/feature_box.dart';
 import 'package:voice_assistant/pallete.dart';
 
 class HomePage extends StatefulWidget {
@@ -72,6 +73,33 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
+            Container(
+              padding: const EdgeInsets.all(10),
+              alignment: Alignment.centerLeft,
+              margin: const EdgeInsets.only(
+                top: 10,
+                left: 22,
+              ),
+              child: const Text(
+                'Here are a few features',
+                style: TextStyle(
+                  fontFamily: 'Cera Pro',
+                  color: Pallete.mainFontColor,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+
+            // features list
+            Column(
+              children: [
+                FeatureBox(
+                  color: Pallete.firstSuggestionBoxColor,
+                  headerText: 'ChatGPT',
+                ),
+              ],
+            )
           ],
         ));
   }
