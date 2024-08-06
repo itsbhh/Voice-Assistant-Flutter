@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "voice_assistant",
+            "cwd": "voice_assistant",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "voice_assistant (profile mode)",
+            "cwd": "voice_assistant",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "voice_assistant (release mode)",
+            "cwd": "voice_assistant",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
